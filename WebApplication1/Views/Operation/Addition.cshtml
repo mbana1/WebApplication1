@@ -1,0 +1,37 @@
+﻿
+@model WebApplication1.Models.Operation
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Addition</title>
+    
+</head>
+<body>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Operande gauche</th>
+                    <th>Opérateur</th>
+                    <th>Operande droite</th>
+                    <th></th>
+                    <th>Résultat :</th>
+                </tr>
+                <tr>
+                    <td>@Model.OperandeGauche</td>
+                    <td>@Model.Operateur</td>
+                    <td>@Model.OperandeDroite</td>
+                    <td>=</td>
+                    <td>@Model.GetResultat()</td>
+                </tr>
+            </thead>
+        </table>
+    </div>
+</body>
+</html>
